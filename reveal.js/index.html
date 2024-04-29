@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><b>CSS Flexbox & Grid</b></section>
+				<section>What is CSS?</section>
+				<section><img src="./pics/amazon-compare.webp" alt=""></section>
+				<section>Why Flexbox & Grid is cool</section>
+				<section>Brief history</section>
+				<section>HTML Tables</section>
+				<section><img src="./pics/tables html.png" alt=""></section>
+				<section><img src="./pics/Снимок экрана 2024-04-27 225045.png" alt=""></section>
+				<section>Floats and the first layout frameworks</section>
+				<section><img src="./pics/Снимок экрана 2024-04-27 230359.png" alt=""></section>
+				<section><img src="./pics/Снимок экрана 2024-04-27 230501.png" alt=""></section>
+				<section>Flexbox</section>
+				<section><img src="./pics/Снимок экрана 2024-04-27 230739.png" alt=""></section>
+				<section><img src="./pics/Снимок экрана 2024-04-27 231007.png" alt=""></section>
+				<section>Grid</section>
+				<section><img src="./pics/grid html.png" alt=""></section>
+				<section><img src="./pics/grid css.png" alt=""></section>
+				<section><img src="./pics/layout grid.png" alt=""></section>
+				<section>New is always better… Right?So Grid wins!</section>
+				<section>Well, <b>no</b></section>
+				<section>Use Flex when:
+					<br>
+					<br>
+					<ul>
+						<li>Content is priority</li>
+						<li>Need horizontal or vertical alignment</li>
+						<li>Layout is one-dimensional</li>
+						<li>Need better older browser support</li>
+					</ul>
+				</section>
+				<section>Use Grid when:
+					<br>
+					<br>
+					<ul>
+						<li>Things need a set width regardless of content</li>
+						<li>Need two-dimensional layout (items in one row or column need to align with the item in the previous row or column)</li>
+						<li>Elements need to overlap</li>
+					</ul>
+				</section>
+				<section><b>Flexbox</b></section>
+				<section> flex-direction: row <img src="./pics/axis fd row.png" alt=""></section>
+				<section> flex-direction: column <img src="./pics/main-axis column.png" alt=""></section>
+				<section> display: flex<img src="./pics/вшыздфн адуч.png" alt=""></section>
+				<section> display: flex<img src="./pics/46.-display-flex.png" alt=""></section>
+				<section> display: inline-flex<img src="./pics/47.-display-inline-flex.png" alt=""></section>
+				<section>The Flex Container Properties
+					<br>
+					<br>
+					<ul><li><code>flex-direction</code></li><li><code>flex-wrap</code></li><li><code>flex-flow</code></li><li><code>justify-content</code></li><li><code>align-items</code></li><li><code>align-content</code></li><li><code>place-content</code></li></ul>
+				</section>
+				<section>flex-direction 
+					<br>
+					<br>
+					<ul><li><code>row</code> (default value)</li><li><code>column</code></li><li><code>row-reverse</code></li><li><code>column-reverse</code></li></ul>
+				</section>
+				<section><img src="./pics/Снимок экрана 2024-04-27 235916.png" alt=""></section>
+				<section> flex-direction: row<img src="./pics/fdrow.png" alt=""></section>
+				<section> flex-direction: column<img src="./pics/2.-flex-direction-column.png" alt=""></section>
+				<section> flex-direction: row-reverse<img src="./pics/3.-flex-direction-row-reverse.png" alt=""></section>
+				<section> flex-direction: column-reverse<img src="./pics/4.-flex-direction-column-reverse.png" alt=""></section>
+				<section>flex-wrap
+					<br>
+					<br>
+					<ul><li><code>nowrap</code> (default value)</li><li><code>wrap</code></li><li><code>wrap-reverse</code></li></ul>
+				</section>
+				<section><img src="./pics/Снимок экрана 2024-04-28 000719.png" alt=""></section>
+				<section>flex-wrap: nowrap<img src="./pics/Снимок экрана 2024-04-28 000950.png" alt=""></section>
+				<section>flex-wrap: wrap<img src="./pics/6.-flex-wrap-wrap.png" alt=""></section>
+				<section>flex-wrap: wrap-reverse <img src="./pics/7.-flex-wrap-wrap-reverse.png" alt=""></section>
+				<section>flex-flow
+					<br>
+					<br>
+					<code>flex-flow = flex-direction + flex-wrap</code>
+					<img src="./pics/Снимок экрана 2024-04-28 001751.png" alt="">
+				</section>
+				<section>justify-content
+					<br>
+					<br>
+					<ul><li><code>flex-start</code> (default value)</li><li><code>flex-end</code></li><li><code>center</code></li><li><code>space-between</code></li><li><code>space-around</code></li><li><code>space-evenly</code></li></ul>
+				</section>
+				<section>justify-content: flex-start<img src="./pics/Снимок экрана 2024-04-28 002159.png" alt=""></section>
+				<section>justify-content: flex-end<img src="./pics/10.-justify-content-flex-end.png" alt=""></section>
+				<section>justify-content: center<img src="./pics/11.-justify-content-center-.png" alt=""></section>
+				<section>justify-content: space-between<img src="./pics/12.-justify-content-space-between.png" alt=""></section>
+				<section>justify-content: space-evenly<img src="./pics/13.-justify-content-space-evenly.png" alt=""></section>
+				<section>justify-content: space-around<img src="./pics/14.-justify-content-space-around.png" alt=""></section>
+				<section>align-items
+					<br>
+					<br>
+					<ul><li><code>stretch</code> (default value)</li><li><code>flex-start</code></li><li><code>flex-end</code></li><li><code>center</code></li><li><code>baseline</code></li></ul>
+				</section>
+				<section>align-items: stretch<img src="./pics/Снимок экрана 2024-04-28 003228.png" alt=""></section>
+				<section>align-items: flex-start<img src="./pics/16.-align-items-flex-start.png" alt=""></section>
+				<section>align-items: flex-end<img src="./pics/17.-align-items-flex-end.png" alt=""></section>
+				<section>align-items: center<img src="./pics/18.-align-items-center.png" alt=""></section>
+				<section>align-items: baseline<img src="./pics/Untitled-design-1.png" alt=""></section>
+				<section>baseline <br> <br>
+					<img src="./pics/440px-Typography_Line_Terms.svg.png" alt="">
+				</section>
+				<section>align-content
+					<br>
+					<br>
+					<ul><li><code>stretch</code> (default value)</li><li><code>flex-start</code></li><li><code>flex-end</code></li><li><code>center</code></li><li><code>space-between</code></li><li><code>space-evenly</code></li><li><code>space-around</code></li></ul>
+				</section>
+				<section>align-content: stretch<img src="./pics/20.-align-content-stretch.png" alt=""></section>
+				<section>align-content: flex-start<img src="./pics/21.-align-content-flex-start.png" alt=""></section>
+				<section>align-content: flex-end<img src="./pics/22.-align-content-flex-end.png" alt=""></section>
+				<section>align-content: center<img src="./pics/23.-align-content-center.png" alt=""></section>
+				<section>align-content: space-between<img src="./pics/24.-align-content-space-between.png" alt=""></section>
+				<section>align-content: space-evenly<img src="./pics/25.-align-content-space-evenly.png" alt=""></section>
+				<section>align-content: space-around<img src="./pics/26.-align-content-space-around.png" alt=""></section>
+				<section>place-content
+					<br>
+					<br>
+					<code>place-content = justify-content + align-content</code>
+					<img src="./pics/Снимок экрана 2024-04-28 005003.png" alt="">
+				</section>
+
+				<section>gap</section>
+				<section> <img src="./pics/Снимок экрана 2024-04-28 020041.png" alt=""></section>
+				<section> <img src="./pics/39.-gap-two-values.png" alt=""></section>
+
+				<section> <code>gap: 10px</code>
+					<img src="./pics/40.-gap-single-value.png" alt="">
+				</section>
+
+				<section>
+					Adding gaps between only the rows
+					<br>
+					<br>
+					 <code>row-gap: 20px</code>
+					<img src="./pics/41.-row-gap.png" alt="">
+				</section>
+
+				<section>
+					Adding gaps between only the columns
+					<br>
+					<br>
+					 <code>column-gap: 20px</code>
+					<img src="./pics/42.-column-gap.png" alt="">
+				</section>
+
+				<section>The Flex Item Properties
+					<br>
+					<br>
+					<ul><li><code>order</code></li><li><code>align-self</code></li><li><code>flex-grow</code></li><li><code>flex-shrink</code></li><li><code>flex-basis</code></li><li><code>flex</code></li></ul>				
+				</section>
+
+				<section>order
+					<img src="./pics/Снимок экрана 2024-04-28 005435.png" alt="">
+					<img src="./pics/27.-no-order-property.png" alt="">
+				</section>
+				<section>
+					<img height="600px" src="./pics/Снимок экрана 2024-04-28 005617.png" alt="">
+				</section>
+				<section><img src="./pics/28.-with-order-property.png" alt=""></section>
+
+				<section>align-self
+					<img src="./pics/Снимок экрана 2024-04-28 010421.png" alt="">
+					<img src="./pics/37.-align-self.png" alt="">
+				</section>
+				
+				<section>flex-grow
+					<img src="./pics/29.-flex-grow-extra-space.png" alt="">
+				</section>
+				<section>
+					<img src="./pics/Снимок экрана 2024-04-28 011247.png" alt="">
+				</section>
+
+				<section> When only one card has a flex-grow of 1 or more
+					<img src="./pics/Снимок экрана 2024-04-28 011445.png" alt="">
+				</section>
+
+				<section> What happens when you add flex-grow values to more than one element?
+					<img src="./pics/32.-flex-grow-jane-jack.png" alt="">
+				</section>
+
+				<section> flex-shrink
+					<img src="./pics/Снимок экрана 2024-04-28 012025.png" alt="">
+				</section>
+				<section> The first card shrinks to make room for the others
+					<img src="./pics/33.-flex-shrink-value-2.png" alt="">
+				</section>
+				<section>What if you don't want a flex item to shrink?</section>
+				<section> <code>flex-shrink: 0</code>
+					<img src="./pics/34.-flex-shrink-vallue-0.png" alt="">
+				</section>
+
+				<section>flex-basis
+					<img src="./pics/Снимок экрана 2024-04-28 012638.png" alt="">
+				</section>
+				<section>flex-basis
+					<img src="./pics/35.-flex-basis-height.png" alt="">
+				</section>
+				<section>flex-basis & flex-direction: row
+					<img src="./pics/Снимок экрана 2024-04-28 012906.png" alt="">
+				</section>
+
+				<section>The <code>flex</code> shorthand property
+					<br>
+					<br>
+					<code>flex = flex-grow + flex-shrink + flex-basis</code>
+					<img src="./pics/Снимок экрана 2024-04-28 014701.png" alt="">
+				</section>
+
+				<section>
+					<h1>BONUS</h1>
+				</section>
+				
+				<section>
+					how to center a div
+				</section>
+				<section>
+					<img src="./pics/Снимок экрана 2024-04-28 014921.png" alt="">
+				</section>
+				<section> thank me later
+					<img src="./pics/38.-center-element-w--flexbox.png" alt="">
+				</section>
+				<section>Bye :)</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
